@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Calculate BMI"
+         android:layout_marginLeft="63dp"
+         android:textStyle="bold"
+         android:textSize="27dp"
+         android:fontFamily="monospace"
+         android:id="@+id/topv"
+         android:textColor="@color/LightSalmon"
+         android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Height:"
+        android:layout_below="@id/topv"
+        android:textSize="23dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/SaddleBrown"
+        android:id="@+id/heightv"/>
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topv"
+        android:layout_toRightOf="@id/heightv"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/heightt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Centimeters)"
+        android:layout_below="@id/heightt"
+        android:textSize="20dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/centimeterv"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Weight:"
+        android:textSize="23dp"
+        android:textColor="@color/SaddleBrown"
+        android:layout_below="@id/heightt"
+        android:layout_marginTop="38dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/weightv"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centimeterv"
+        android:layout_toRightOf="@id/weightv"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/weightt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Kilograms)"
+        android:layout_below="@id/weightt"
+        android:textSize="20dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/kilogramv"
+
+        />
+
+<Button
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:text="Calculate BMI"
+    android:layout_below="@id/kilogramv"
+    android:layout_marginLeft="173dp"
+    android:textColor="@color/Chartreuse"
+    android:background="@color/CadetBlue"
+    android:textStyle="bold"
+    android:textSize="19dp"
+    android:textAllCaps="false"
+    android:padding="14dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/btnBMI"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btnBMI"
+    android:text="Your BMI Is:"
+    android:textSize="20dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="40dp"
+    android:textColor="@color/Chocolate"
+    android:textStyle="bold"
+    android:id="@+id/bmiv"
+    />
+
+    <EditText
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bmiv"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:hint="...................."
+        android:editable="false"
+        android:gravity="center"
+        android:id="@+id/bmires"/>
+
+
+
+</RelativeLayout>
